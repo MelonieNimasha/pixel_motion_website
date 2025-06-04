@@ -52,20 +52,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Pixel-Motion: Image-to-4D Prediction for Camera-Controlled Video Synthesis</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://www.gla.ac.uk/pgrs/meloniedealmeida/" target="_blank">Melonie de Almeida</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://www.gla.ac.uk/schools/computing/staff/danielaivanova/" target="_blank">Daniela Ivanova</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://www.gla.ac.uk/schools/computing/staff/johnwilliamson/" target="_blank">John H. Williamson</a>
+                    <span class="author-block">
+                      <a href="https://www.gla.ac.uk/schools/computing/staff/paulhenderson/" target="_blank">Paul Henderson</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">University of Glasgow<br>Under Review for ICCV 2025</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -82,27 +84,6 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -148,7 +129,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Humans excel at forecasting the future dynamics of a scene given just a single image. Video prediction models that can mimic this ability are an essential component for intelligent systems. Recent approaches have improved temporal coherence and 3D consistency in single-image-conditioned video prediction. However, these methods often lack robust user controllability, such as modifying the camera path, limiting their applicability in real-world applications. Existing state-of-the-art camera-controlled image-to-video models face challenges in accurately modeling camera motion, ensuring temporal consistency, and preserving geometric integrity. Leveraging explicit intermediate 3D or 4D representations promises to eliminate these limitations, by ensuring the predicted video depicts a coherent scene from a specific camera trajectory. We propose a novel framework that predicts a 4D Gaussian Splat representation from a single image in a single forward pass within seconds, enabling the rendering of videos with camera guidance. Extensive experiments on the KITTI and Waymo datasets demonstrate that our method achieves state-of-the-art video quality and inference efficiency performance.
           </p>
         </div>
       </div>
