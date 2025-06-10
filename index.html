@@ -58,11 +58,11 @@
               <span class="author-block">
                 <a href="https://www.gla.ac.uk/pgrs/meloniedealmeida/" target="_blank">Melonie de Almeida</a><sup></sup>,</span>
                 <span class="author-block">
-                  <a href="https://www.gla.ac.uk/schools/computing/staff/danielaivanova/" target="_blank">Daniela Ivanova</a><sup></sup>,</span>
+                  <a href="https://daniela997.github.io/" target="_blank">Daniela Ivanova</a><sup></sup>,</span>
                   <span class="author-block">
                     <a href="https://www.gla.ac.uk/schools/computing/staff/johnwilliamson/" target="_blank">John H. Williamson</a><sup></sup>,</span>
                     <span class="author-block">
-                      <a href="https://www.gla.ac.uk/schools/computing/staff/paulhenderson/" target="_blank">Paul Henderson</a>
+                      <a href="https://www.pmh47.net/" target="_blank">Paul Henderson</a>
                   </span>
                   </div>
 
@@ -102,23 +102,33 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+<section class="flex-diagram-section">
+  <div class="flex-diagram">
+    <div class="diagram-box">
+      <div class="diagram-label">Input Image</div>
+      <img src="static/images/2011_09_26_0084_0000000320.png" alt="Input Image" class="diagram-img"/>
+    </div>
+    <div class="diagram-arrow">&#8594;</div>
+    <div class="diagram-box">
+      <div class="diagram-label">image-to-4D Autoencoder</div>
+      <img src="static/images/my_model.jpg" alt="Model Diagram" class="diagram-img-model"/>
+    </div>
+    <div class="diagram-arrow">&#8594;</div>
+    <div class="diagram-box">
+      <div class="diagram-label">4D Representation</div>
+      <video class="diagram-video-4d" src="static/videos/video_84_320.mp4" controls muted></video>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <div class="arrow-label" style="font-size:0.72em; margin-bottom:2px;">camera trajectory</div>
+      <div class="diagram-arrow">&#8594;</div>
+    </div>
+    <div class="diagram-box">
+      <div class="diagram-label">Output Video</div>
+      <video class="diagram-video" src="static/videos/video_84_320.mp4" controls muted="static/images/your_poster.png"></video>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -137,144 +147,82 @@
 </section>
 <!-- End paper abstract -->
 
-<section class="flex-diagram-section">
-  <div class="flex-diagram">
-    <div class="diagram-box">
-      <div class="diagram-label">Input Image</div>
-      <img src="static/images/2011_09_26_0084_0000000320.png" alt="Input Image" class="diagram-img"/>
-    </div>
-    <div class="diagram-arrow">&#8594;</div>
-    <div class="diagram-box">
-      <div class="diagram-label">Model Diagram</div>
-      <img src="static/images/my_model.jpg" alt="Model Diagram" class="diagram-img"/>
-    </div>
-    <div class="diagram-arrow">&#8594;</div>
-    <div class="diagram-box">
-      <div class="diagram-label">4D Video</div>
-      <video class="diagram-video" src="static/videos/2011_09_26_0096_0000000320.mp4" controls muted></video>
-    </div>
-    <div class="diagram-arrow">&#8594;</div>
-    <div class="diagram-box">
-      <div class="diagram-label">Camera Video</div>
-      <video class="diagram-video" src="static/videos/2011_09_26_0096_0000000320.mp4" controls muted></video>
-    </div>
-  </div>
-</section>
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- Five Videos Grid Section with Play All Button, 3 Rows, Column and Row Headings, and Custom Gap -->
+<section class="flex-videos-section">
+  <div class="flex-videos-grid-rowhead">
+    <div class="row-headings">
+      <div class="row-label">
+        KITTI Dataset
+        <br>
+        <button class="play-row-btn button is-small is-light" data-row="1" style="margin-top:4px;">Play Row</button>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+      <div class="row-label">
+        Waymo Open Dataset
+        <br>
+        <button class="play-row-btn button is-small is-light" data-row="2" style="margin-top:4px;">Play Row</button>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
+      <div class="row-label">
+        Realestate10k Dataset
+        <br>
+        <button class="play-row-btn button is-small is-light" data-row="3" style="margin-top:4px;">Play Row</button>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
+    <div class="flex-videos-grid-customgap">
+      <div class="video-col">
+        <div class="video-label">Ground truth</div>
+        <video class="diagram-video flexbox-video" src="static/videos/video1_row1.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video1_row2.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video1_row3.mp4" controls muted></video>
+      </div>
+      <div class="video-col col-gap">
+        <div class="video-label">Pixel-Motion</div>
+        <video class="diagram-video flexbox-video" src="static/videos/video2_row1.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video2_row2.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video2_row3.mp4" controls muted></video>
+      </div>
+      <div class="video-col">
+        <div class="video-label">camI2V</div>
+        <video class="diagram-video flexbox-video" src="static/videos/video3_row1.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video3_row2.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video3_row3.mp4" controls muted></video>
+      </div>
+      <div class="video-col">
+        <div class="video-label">CameraCtrl</div>
+        <video class="diagram-video flexbox-video" src="static/videos/video4_row1.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video4_row2.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video4_row3.mp4" controls muted></video>
+      </div>
+      <div class="video-col">
+        <div class="video-label"> MotionCtrl</div>
+        <video class="diagram-video flexbox-video" src="static/videos/video5_row1.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video5_row2.mp4" controls muted></video>
+        <video class="diagram-video flexbox-video" src="static/videos/video5_row3.mp4" controls muted></video>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Play all videos in a specific row
+  document.querySelectorAll('.play-row-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var row = btn.getAttribute('data-row');
+      document.querySelectorAll('.flex-videos-grid-customgap .video-col').forEach(function(col) {
+        var videos = col.querySelectorAll('.flexbox-video');
+        if (videos.length >= row) {
+          videos[row - 1].play();
+        }
+      });
+    });
+  });
+});
+</script>
 
 
 
 
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
